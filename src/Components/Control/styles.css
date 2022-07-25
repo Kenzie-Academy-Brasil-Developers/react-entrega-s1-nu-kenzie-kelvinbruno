@@ -1,0 +1,32 @@
+
+
+main{
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    #div__control__register__and__totalvalue{
+    width: 340px;
+    margin: 10px auto;
+    }
+    main{
+      display: block;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    main{
+      width: 1000px;
+      margin: 10px auto;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    main{
+      width: 1600px;
+      margin: 10px auto;
+    }
+
+  }
+
+  

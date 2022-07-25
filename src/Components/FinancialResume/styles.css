@@ -1,0 +1,254 @@
+#financial__resume__whole__area {
+  width: 560px;
+}
+#financial__resume__tabs__title,
+.financial__resume__financial__list__item__title {
+  /*também é o css dos titulos dos cards*/
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+  display: inline-block;
+}
+.financial__resume__tabs__list__item,
+#financial__resume__tabs__list {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.financial__resume__tabs__list__item__button {
+  box-sizing: border-box;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  width: 87px;
+  height: 40px;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  color: #5b6166;
+}
+.financial__resume__tabs__list__item__button:hover {
+  filter: brightness(0.8);
+}
+
+.financial__resume__tabs__list__item__selected {
+  background: #fd377e;
+  color: #ffffff;
+  border: 1.4px solid #fd377e;
+}
+.financial__resume__financial__list {
+  width: 340px;
+  overflow-y: scroll;
+  min-height: 150px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: flex-end; */
+}
+.financial__resume__financial__list h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #343a40;
+}
+
+.financial__resume__financial__list__item {
+  background: #f8f9fa;
+  border-left: 5px solid #f8f9fa;
+  border-radius: 10px;
+}
+.financial__resume__financial__list__item__entry {
+  border-left: 5px solid #03b898;
+}
+.financial__resume__financial__list__item__spendings {
+  border-left: 5px solid #f02e58;
+}
+.financial__resume__financial__list__item__value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+
+  color: #fd377e;
+}
+.financial__resume__financial__list__item__delete_button {
+  height: 30px;
+  width: 30px;
+  background: #e9ecef;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #e9ecef;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.financial__resume__financial__list__item__delete_button:hover {
+  background-color: #343a40;
+}
+.fa-trash {
+  color: #343a40;
+}
+.fa-trash:hover {
+  color: #e9ecef;
+}
+.financial__resume__financial__list__item__type {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+}
+.financial__resume__financial__list__item__type__entry {
+  color: #03b898;
+}
+.financial__resume__financial__list__item__type__spendings {
+  color: #f02e58;
+}
+
+/* <div id="financial__resume__whole__area">
+            <div id="financial__resume__tabs">
+            <span id="financial__resume__tabs__title">Resumo financeiro</span>
+            <ul id="financial__resume__tabs__list">
+                <li className="financial__resume__tabs__list__item"><button>Todos</button></li>
+                <li className="financial__resume__tabs__list__item" ><button>Entradas</button></li>
+                <li className="financial__resume__tabs__list__item"><button>Despesas</button></li>
+            </ul>
+            </div>
+            <div id="financial__resume__div">
+            <ul className="financial__resume__financial__list">
+                <li className="financial__resume__financial__list__item">
+                <div>
+                        <span className="financial__resume__financial__list__item__title">Investimento - Carro</span>
+                        <span className="financial__resume__financial__list__item__value">R$ 856,00</span>
+                        <button className="financial__resume__financial__list__item__delete_button"><i class="fa-solid fa-trash"></i></button>
+                        <label className="financial__resume__financial__list__item__type">Entrada</label>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+     */
+@media (max-width: 1024px) {
+  #financial__resume__whole__area {
+    width: 340px;
+    margin: 10px auto;
+  }
+  #financial__resume__tabs__list {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+  }
+  #financial__resume__tabs__title {
+    display: block;
+    text-align: center;
+  }
+  .financial__resume__financial__list {
+    width: 340px;
+    margin-top: 20px;
+    min-height: 100px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .financial__resume__financial__list__item {
+    width: 320px;
+    height: 90px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .financial__resume__financial__list__item__title {
+    margin: 0px auto;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    word-wrap: break-word;
+    width: 300px;
+  }
+  .financial__resume__financial__list__item__value {
+    font-size: 12px;
+  }
+
+  .financial__resume__financial__list__item__delete_button {
+    margin: 0px auto;
+  }
+  .financial__resume__financial__list__item__type {
+    display: inline-block;
+    margin: 10px 40px 0px;
+  }
+}
+@media screen and (min-device-width: 550px) {
+  #financial__resume__whole__area {
+    width: 510px;
+    margin: 10px auto;
+  }
+  .financial__resume__financial__list {
+    width: 510px;
+    margin-top: 20px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .financial__resume__financial__list__item {
+    width: 510px;
+    height: 150px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .financial__resume__financial__list__item__title {
+    margin: 2px auto;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    width: 480px;
+    word-wrap: break-word;
+  }
+  .financial__resume__financial__list__item__value {
+    font-size: 14px;
+  }
+  .financial__resume__financial__list__item__type {
+    display: inline-block;
+    margin: 50px 100px 0px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .financial__resume__financial__list h3 {
+    position: absolute;
+    top: 200px;
+    display: block;
+  }
+}
+/* <div id="financial__resume__whole__area">
+            <div id="financial__resume__tabs">
+            <span id="financial__resume__tabs__title">Resumo financeiro</span>
+            <ul id="financial__resume__tabs__list">
+                <li className="financial__resume__tabs__list__item"><button>Todos</button></li>
+                <li className="financial__resume__tabs__list__item" ><button>Entradas</button></li>
+                <li className="financial__resume__tabs__list__item"><button>Despesas</button></li>
+            </ul>
+            </div>
+            <div id="financial__resume__div">
+            <ul className="financial__resume__financial__list">
+                <li className="financial__resume__financial__list__item">
+                <div>
+                        <span className="financial__resume__financial__list__item__title">Investimento - Carro</span>
+                        <span className="financial__resume__financial__list__item__value">R$ 856,00</span>
+                        <button className="financial__resume__financial__list__item__delete_button"><i class="fa-solid fa-trash"></i></button>
+                        <label className="financial__resume__financial__list__item__type">Entrada</label>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+     */
